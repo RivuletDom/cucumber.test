@@ -39,7 +39,7 @@ public class Test {
     	String exp_message = "Welcome to your account. Here you can manage all of your personal information and orders.";
     	String actual = driver.findElement(By.cssSelector(".info-account")).getText();
         Assert.assertEquals(exp_message, actual);
-        driver.quit();  
+        driver.close();  
     }    
 
 	
